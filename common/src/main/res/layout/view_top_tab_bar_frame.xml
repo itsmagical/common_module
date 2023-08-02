@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <HorizontalScrollView
+        android:id="@+id/top_tab_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--tabs-->
+            <LinearLayout
+                android:id="@+id/tabs_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <!--下划指示线-->
+            <View
+                android:id="@+id/tab_indicator_line"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_below="@id/tabs_container"
+                android:background="#ff6600">
+            </View>
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rl_tab_underline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/widget_size_10"
+                android:paddingRight="@dimen/widget_size_10"
+                android:layout_gravity="bottom|center_horizontal">
+                <include layout="@layout/view_block_divide_line"/>
+            </RelativeLayout>
+        </FrameLayout>
+    </HorizontalScrollView>
+    <FrameLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</LinearLayout>

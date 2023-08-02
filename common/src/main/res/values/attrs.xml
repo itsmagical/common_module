@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TopTabBar">
+        <attr name="tabViewWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="FoldLabelLayout">
+        <attr name="labelPosition" format="reference"/>
+        <attr name="label_data_source" format="reference"/>
+        <attr name="label_text_size" format="integer"/>
+        <attr name="label_height" format="reference"/>
+        <attr name="division_count" format="integer"/>
+        <!--默认显示多少行 其余的隐藏-->
+        <attr name="show_line_count" format="integer"/>
+        <attr name="margin" format="reference"/>
+        <attr name="margin_horizontal" format="reference"/>
+        <attr name="margin_vertical" format="reference"/>
+        <attr name="label_background_state" format="reference"/>
+        <attr name="label_text_color_state" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="WheelView">
+        <attr name="itemVisibleNum" format="integer"/>
+
+        <attr name="textColorOuter" format="color" />
+        <attr name="textSizeOuter" format="dimension" />
+        <attr name="textColorCenter" format="color" />
+        <attr name="textSizeCenter" format="dimension" />
+
+        <attr name="blockLineColor" format="color" />
+
+        <attr name="isLoop" format="boolean"/>
+        <attr name="lineSpaceingDimens" format="dimension"/>
+
+        <attr name="wheelGravity" format="enum" >
+            <enum name="left" value="234"/>
+            <enum name="center" value="354"/>
+            <enum name="right" value="894"/>
+        </attr>
+    </declare-styleable>
+
+</resources>
